@@ -849,7 +849,7 @@ GameManager.prototype.move = function (direction) {
               self.grid.removeTile(tile);
 
               
-              if (tile.value === 2) { //有数字为4的方块被合成
+              if (next.value === 2) { //有数字为4的方块被合成
                   //self.PlaySound("Play2");
                   // luigi-修改点-2
                   var srcs = [
@@ -867,7 +867,7 @@ GameManager.prototype.move = function (direction) {
                   
                   // luigi-修改点-2-over
               }
-              if (tile.value === 4) {//有数字为8的方块被合成
+              if (next.value === 4) {//有数字为8的方块被合成
                   //self.PlaySound("Play3");
                   // // luigi-修改点-2
                   var srcs = [
@@ -883,7 +883,7 @@ GameManager.prototype.move = function (direction) {
                   // luigi-修改点-2-over
               }
 
-              if (tile.value === 8) {//有数字为16的方块被合成
+              if (next.value === 8) {//有数字为16的方块被合成
                   var srcs = [
                       './audio/16/1.wav',
                       './audio/16/2.wav',
@@ -897,7 +897,7 @@ GameManager.prototype.move = function (direction) {
                   // luigi-修改点-2-over
               }
 
-              if (tile.value === 16) {//有数字为32的方块被合成
+              if (next.value === 16) {//有数字为32的方块被合成
                   var srcs = [
                       './audio/32/1.wav'
                   ]
@@ -907,7 +907,7 @@ GameManager.prototype.move = function (direction) {
               }
 
 
-              if (tile.value === 32) {//有数字为64的方块被合成
+              if (next.value === 32) {//有数字为64的方块被合成
                   var srcs = [
                       './audio/64/1.wav',
                       './audio/64/2.wav',
@@ -918,7 +918,7 @@ GameManager.prototype.move = function (direction) {
                   // luigi-修改点-2-over
               }
 
-              if (tile.value === 64) {//有数字为128的方块被合成
+              if (next.value === 64) {//有数字为128的方块被合成
                   var srcs = [
                       './audio/128/1.wav',
                       './audio/128/2.wav',
@@ -928,7 +928,7 @@ GameManager.prototype.move = function (direction) {
                   playAudio(audioFile)
                   // luigi-修改点-2-over
               }
-              if (tile.value === 128) {//有数字为256的方块被合成
+              if (next.value === 128) {//有数字为256的方块被合成
                   var srcs = [
                       './audio/256/1.wav'
                   ]
@@ -936,7 +936,7 @@ GameManager.prototype.move = function (direction) {
                   playAudio(audioFile)
                   // luigi-修改点-2-over
               }
-              if (tile.value === 256) {//有数字为512的方块被合成
+              if (next.value === 256) {//有数字为512的方块被合成
                   var srcs = [
                       './audio/512/1.wav',
                       './audio/512/2.wav'
@@ -945,7 +945,7 @@ GameManager.prototype.move = function (direction) {
                   playAudio(audioFile)
                   // luigi-修改点-2-over
               }
-              if (tile.value === 512) {//有数字为1024的方块被合成
+              if (next.value === 512) {//有数字为1024的方块被合成
                   var srcs = [
                       './audio/1024/1.wav'
                   ]
@@ -953,7 +953,7 @@ GameManager.prototype.move = function (direction) {
                   playAudio(audioFile)
                   // luigi-修改点-2-over
               }
-              if (tile.value === 1024) {//哇袄！！！！！
+              if (next.value === 1024) {//哇袄！！！！！
                   var srcs = [
                       './audio/2048/1.wav'
                   ]
