@@ -840,9 +840,9 @@ GameManager.prototype.move = function (direction) {
         var next      = self.grid.cellContent(positions.next);
 
         // Only one merger per row traversal?
-          if (next  && !next.mergedFrom) {
+          if (next  && !next.mergedFrom) {//删除了一样数字的判断条件
 
-              var merged = new Tile(positions.next, tile.value * 2);
+              var merged = new Tile(positions.next, next.value * 2);
               merged.mergedFrom = [tile, next];
               
               self.grid.insertTile(merged);
